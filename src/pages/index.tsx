@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import LineList from '../components/Line/LineList'
+import Line1 from '@/components/Line/Line1'
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
             <div>
                 <h1 className='text-2xl font-bold mb-4'>수도권 지하철 노선도</h1>
                 <LineList />
+                <Line1 />
             </div>
         </div>
     )
