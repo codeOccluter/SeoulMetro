@@ -8,18 +8,18 @@ interface Station {
     cy: number
 }
 
-const Line1 = () => {
+const Line2 = () => {
 
     const [stations, setStations] = useState<Station[]>([])
 
     useEffect(() => {
-        const fetchLine1 = async () => {
-            const response = await fetch('/stationLine1.json')
+        const fetchLine2 = async () => {
+            const response = await fetch('/stationLine2.json')
             const data = await response.json()
             setStations(data.stations)
         }
 
-        fetchLine1()
+        fetchLine2()
     }, [])
 
     return (
@@ -73,4 +73,4 @@ const Line1 = () => {
     )
 }
 
-export default Line1
+export default Line2
